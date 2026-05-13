@@ -35,7 +35,7 @@ class Server{
     }
     private async connectDB(){
         try{
-            await db.sequelize.sync({force:false});
+            // await db.sequelize.sync({force:false});
             await dbnosql.connect();
         }catch(err){
             console.log(err);
